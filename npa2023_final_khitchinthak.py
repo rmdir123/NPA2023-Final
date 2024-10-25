@@ -14,13 +14,13 @@ from restconf_final import create, delete, enable, disable, status
 #######################################################################################
 # 2. Assign the Webex hard-coded access token to the variable accessToken.
 
-accessToken = "Bearer OWZjMTc0YmQtMTQ3Ni00MzQzLTk0MmItYjY0MjU1MWMwYjQ5ZGMwMjM0NGUtMTdl_P0A1_3de63120-60ae-421d-95ad-b34713415f17"
+accessToken = "Bearer NTQwZDk2MzYtYzRhNy00YTNlLTliZDQtNGE2MzJlNjY4MzcyYzJjZDc2OWMtNzZl_P0A1_bc884c7a-820b-497b-8b60-00b4d15ea95d"
 
 #######################################################################################
 # 3. Prepare parameters get the latest message for messages API.
 
 # Defines a variable that will hold the roomId
-roomIdToGetMessages = "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vMGJiZmQ0MjAtNWViNC0xMWVmLWE3MWItNmY2NjIyMGE3ZTgx" # ADD
+roomIdToGetMessages = "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vNjIwNmJkNjAtNWU5ZC0xMWVmLWEyM2MtNzFiOTEzZDZjMzU3" # ADD
 
 while True:
     # always add 1 second of delay to the loop to not go over a rate limit of API calls
@@ -67,7 +67,7 @@ while True:
 
     # check if the text of the message starts with the magic character "/" followed by your studentID and a space and followed by a command name
     #  e.g.  "/66070123 create"
-    if message.find("/65070076") == 0: # Add
+    if message.find("/65070018") == 0: # Add
         
         # extract the command
         command = message.split(" ", 1) # Add
